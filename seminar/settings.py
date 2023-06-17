@@ -72,12 +72,14 @@ MIDDLEWARE = [
 CSRF_TRUSTED_ORIGINS = [
     'http://127.0.0.1:3000', 
     'http://localhost:3000',
-    'https://port-0-likelion-final-django-dihik2mlizm4wsm.sel4.cloudtype.app'
+    'https://port-0-likelion-final-django-dihik2mlizm4wsm.sel4.cloudtype.app',
+    'https://web-likelion-final-dihik2mlizp2fcm.sel4.cloudtype.app'
 ]
 
 CORS_ALLOWED_ORIGINS= [ # (헤더) Access-Control-Allow-Origin 에 담을 주소들
     'http://127.0.0.1:3000', 
     'http://localhost:3000',
+    'https://web-likelion-final-dihik2mlizp2fcm.sel4.cloudtype.app'
 ]
 CORS_ALLOW_CREDENTIALS = True # cookie를 주고받으려면git 얘를 True로 설정해야 해요.
 CORS_ALLOW_HEADERS = (
@@ -188,3 +190,4 @@ SIMPLE_JWT = {
     'REFRESH_TOKEN': 'refresh_token',
 }
 
+SESSION_COOKIE_DOMAIN = '.cloudtype.app'
